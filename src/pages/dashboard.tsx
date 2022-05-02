@@ -16,7 +16,7 @@ const options = {
     dataLabels: { enabled: false },
     tooltip: { enabled: false },
     xaxis: {
-      type: 'datetime',
+      type: "datetime",
       labels: {
         formatter: function (val, timestamp) {
           return new Date(val).toLocaleDateString();
@@ -59,14 +59,14 @@ const options = {
         }),
       ],
     },
-    fill:{
+    fill: {
       opacity: 0.3,
-      type: "gradient", 
-      gradient:{
-        shade: 'dark',
+      type: "gradient",
+      gradient: {
+        shade: "dark",
         opacityFrom: 0.7,
         opacityTo: 0.3,
-      }
+      },
     },
   },
 };
@@ -89,13 +89,13 @@ export default function Dashboard() {
           minChildWidth="320px"
           alignItems="flex-start"
         >
-          <Box p="8" bg="gray.800" borderRadius={8} pb="4">
+          <Box p={["6", "8"]} bg="gray.800" borderRadius={8} pb="4">
             <Text fontSize="lg" mb="4">
               Inscritos da Semana
             </Text>
             <Chart options={options} series={series} type="area" height={160} />
           </Box>
-          <Box p="8" bg="gray.800" borderRadius={8}>
+          <Box p={["6", "8"]} bg="gray.800" borderRadius={8}>
             <Text fontSize="lg" mb="4">
               Taxa de Abertura
             </Text>
