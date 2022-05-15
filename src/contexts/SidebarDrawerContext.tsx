@@ -5,7 +5,7 @@ import { createContext, ReactNode, useContext, useEffect } from "react";
 interface SidebarDrawerProviderProps{
   children: ReactNode;
 }
-
+// NOTE
 type SidebarDrawerContextData = UseDisclosureReturn;
 
 
