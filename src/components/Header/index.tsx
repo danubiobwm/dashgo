@@ -38,7 +38,7 @@ export default function Header() {
         </IconButton>
       )}
       <Logo />
-      {isWideVersion ?? <SearchBox />}
+      {isWideVersion && <SearchBox />}
 
       <NotificationsNav />
       <Profile showProfileData={isWideVersion} />
